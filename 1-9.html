@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Курс JavaScript</title>
+    <script>
+        let arr = new Array();
+        // инициализация переменных
+        arr[0] = 'Ивaнов';
+        arr[1] = 'Василий';
+        arr[2] = 'Иванович';
+        arr[3] = 'Преподаватель';
+        arr[4] = 'Высшее';
+        arr[5] = 'PHP';
+        arr[6] = 'vasya123';
+        arr[7] = '18';
+        arr[8] = 'vasya123@mail.ru';
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+        <script>
+            // выведем значения переменных
+            document.write(`Исходные значения переменных <br>`);
+            document.write(`<h3> ${arr[0]} ${arr[1]} ${arr[2]} <br></h3>`);
+            document.write(`Должность: ${arr[3]} <br>`);
+            document.write(`Образование: ${arr[4]}<br>`);
+            document.write(`Преподаваемая специальность: ${arr[5]} <br>`);
+            document.write(`Логин: ${arr[6]} <br>`);
+            document.write(`Возраст: ${arr[7]} <br>`);
+            document.write(`E-mail: ${arr[8]} <br><br>`);
+
+            // переопределим значения переменных
+            let arr2 = [];
+            arr2[0] = 'Ивaнова';
+            arr2[1] = 'Анна';
+            arr2[2] = 'Ивановна';
+            arr2[3] = 'Преподаватель';
+            arr2[4] = 'Высшее';
+            arr2[5] = 'JS';
+            arr2[6] = 'anyta987';
+            arr2[7] = '17';
+            arr2[8] = 'anyta987@mail.ru';
+
+            // выведем новые значения переменных
+            document.write(`Новые значения переменных <br>`);
+            document.write(`<h3> ${arr2[0]} ${arr2[1]} ${arr2[2]} <br></h3>`);
+            document.write(`Должность: ${arr2[3]} <br>`);
+            document.write(`Образование: ${arr2[4]}<br>`);
+            document.write(`Преподаваемая специальность: ${arr2[5]} <br>`);
+            document.write(`Логин: ${arr2[6]} <br>`);
+            document.write(`Возраст: ${arr2[7]} <br>`);
+            document.write(`E-mail: ${arr2[8]} <br><br>`);
+        </script>
+    </div>
+
+</body>
+
+</html>
