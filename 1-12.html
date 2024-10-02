@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Курс JavaScript</title>
+    <script>
+        // инициализация переменных
+        let object = {
+            SURNAME : 'Ивaнов',
+            NAME : 'Василий',
+            PATRONIMIC : 'Иванович',
+            OPUCATION : 'Преподаватель',
+            DEGREE : 'Высшее',
+            CATEGORY : new Array("Первая", "Вторая", "Третья"),
+            EDUCATION : new Array("МГТУ", "Технисекий университет", "СПБГУ"),
+            DISCRIPTION : new Array("PHP", "JS", "Pyton"),
+            LOGIN : 'vasya123',
+            AGE : 18,
+            EMAIL : 'vasya123@mail.ru'
+        };
+       
+        // let SURNAME = 'Ивaнов';
+        // let NAME = 'Василий';
+        // let PATRONIMIC = 'Иванович';
+        // let OPUCATION = 'Преподаватель';
+        // let 
+        // let DISCRIPTION = 'PHP';
+        // let LOGIN = 'vasya123';
+        // let AGE = '18';
+        // let EMAIL = 'vasya123@mail.ru';
+    </script>
+</head>
+<style>
+    ul{
+        margin: 3px;
+    }
+</style>
+
+<body>
+
+    <header>
+        <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+        <script>
+            // выведем значения переменных
+            document.write(`<h3> ${object.SURNAME} ${object.NAME} ${object.PATRONIMIC} <br></h3>`);
+            document.write(`<i>Должность:</i> ${object.OPUCATION} <br>`);
+            document.write(`<i>Образование:</i> ${object.DEGREE}<br>`);
+            document.write(`<i>Категория:</i> ${object.CATEGORY[0]}<br>`);
+            document.write(`<i>Образование:</i> ${object.EDUCATION[0]}, ${object.EDUCATION[1]}, ${object.EDUCATION[2]}<br>`)
+            document.write(`<i>Преподаваемая специальность:</i> <ul><li>${object.DISCRIPTION[0]}</li> <li>${object.DISCRIPTION[1]}</li> <li>${object.DISCRIPTION[2]}</li> </ul><br>`);
+            document.write(`<i>Логин:</i>  ${object.LOGIN}<br>`);
+            document.write(`<i>Возраст:</i>  ${object.AGE}<br>`);
+            document.write(`<i>E-mail:</i> ${object.EMAIL} <br><br>`);
+
+            // переопределим значения переменных
+            let object2 = {
+                surname : 'Ивaновa',
+                name : 'Анна',
+                patronimic : 'Ивановна',
+                opucation : 'Преподаватель',
+                degree : 'Высшее',
+                category : new Array("Первая", "Вторая", "Третья"),
+                edication : new Array("МГТУ", "Технисекий университет", "СПБГУ", "МпК"),
+                discription : new Array("Дизайн приложений", "HTML", "CSS"),
+                login : 'vasya123',
+                age : 22,
+                email : 'vasya123@mail.ru'
+            };
+            // let surname = 'Ивaнова';
+            // let name = 'Анна';
+            // let patronimic = 'Ивановна';
+            // let opucation = 'Преподаватель';
+            // let degree = 'Высшее';
+            // let discription = 'JS';
+            // let login = 'anyta987';
+            // let age = '17';
+            // let email = 'anyta987@mail.ru';
+
+            // выведем новые значения переменных
+            document.write(`<h3> ${object2.surname} ${object2.name} ${object2.patronimic} <br></h3>`);
+            document.write(`<i>Должность:</i> ${object2.opucation} <br>`);
+            document.write(`<i>Образование:</i> ${object2.degree}<br>`);
+            document.write(`<i>Категория:</i> ${object2.category[1]}<br>`);
+            document.write(`<i>Образование:</i> ${object2.edication[0]}, ${object2.edication[1]}, ${object2.edication[2]}, ${object2.edication[3]} <br>`);
+            document.write(`<i>Преподаваемая специальность:</i> <ul><li>${object2.discription[0]}</li> <li>${object2.discription[1]}</li> <li>${object2.discription[2]}</li> </ul><br>`);
+            document.write(`<i>Логин:</i> ${object2.login} <br>`);
+            document.write(`<i>Возраст:</i> ${object2.age} <br>`);
+            document.write(`<i>E-mail:</i> ${object2.email} <br><br>`);
+
+            // как я поняла, я уже использовала интерполяцию переменных
+        </script>
+    </div>
+
+</body>
+
+</html>
