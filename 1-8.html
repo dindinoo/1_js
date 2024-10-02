@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Курс JavaScript</title>
+    <script>
+        // инициализация переменных
+        let SURNAME = 'Ивaнов';
+        let NAME = 'Василий';
+        let PATRONIMIC = 'Иванович';
+        let OPUCATION = 'Преподаватель';
+        let DEGREE = 'Высшее';
+        let DISCRIPTION = 'PHP';
+        let LOGIN = 'vasya123';
+        let AGE = '18';
+        let EMAIL = 'vasya123@mail.ru';
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+        <script>
+            // выведем значения переменных
+            document.write("Исходные значения переменных" + '<br>');
+            ddocument.write('<h3>' + SURNAME + " " + NAME + " " + PATRONIMIC + " " + '<br>' + '</h3>');
+            document.write('Должность: ' + OPUCATION + '<br>');
+            document.write('Образование: ' + DEGREE + '<br>');
+            document.write('Преподаваемая специальность: ' + DISCRIPTION + '<br>');
+            document.write('Логин: ' + LOGIN + '<br>');
+            document.write('Возраст: ' + AGE + '<br>');
+            document.write('E-mail: ' + EMAIL + '<br>' + '<br>');
+
+            // переопределим значения переменных
+            let surname = 'Ивaнова';
+            let name = 'Анна';
+            let patronimic = 'Ивановна';
+            let opucation = 'Преподаватель';
+            let degree = 'Высшее';
+            let discription = 'JS';
+            let login = 'anyta987';
+            let age = '17';
+            let email = 'anyta987@mail.ru';
+
+            // выведем новые значения переменных
+            document.write("Новые значения переменных" + '<br>');
+            document.write('<h3>' + surname + " " + name + " " + patronimic + " " + '<br>' + '</h3>');
+            document.write('Должность: ' + opucation + '<br>');
+            document.write('Образование: ' + degree + '<br>');
+            document.write('Преподаваемая специальность: ' + discription + '<br>');
+            document.write('Логин:' + login + '<br>');
+            document.write('Возраст:' + age + '<br>');
+            document.write('E-mail:' + email + '<br>');
+        </script>
+    </div>
+
+</body>
+
+</html>
