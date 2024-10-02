@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Курс JavaScript</title>
+    <script>
+        // инициализация переменных
+        let object = {
+            SURNAME : 'Ивaнов',
+            NAME : 'Василий',
+            PATRONIMIC : 'Иванович',
+            OPUCATION : 'Преподаватель',
+            DEGREE : 'Высшее',
+            DISCRIPTION : 'PHP',
+            LOGIN : 'vasya123',
+            AGE : 18,
+            EMAIL : 'vasya123@mail.ru'
+        };
+        // let SURNAME = 'Ивaнов';
+        // let NAME = 'Василий';
+        // let PATRONIMIC = 'Иванович';
+        // let OPUCATION = 'Преподаватель';
+        // let 
+        // let DISCRIPTION = 'PHP';
+        // let LOGIN = 'vasya123';
+        // let AGE = '18';
+        // let EMAIL = 'vasya123@mail.ru';
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <h1 align="center">Введение в JavaScript</h1>
+    </header>
+
+    <div class="content">
+        <script>
+            // выведем значения переменных
+            document.write(`Исходные значения переменных <br>`);
+            document.write(`<h3> ${object.SURNAME} ${object.NAME} ${object.PATRONIMIC} <br></h3>`);
+            document.write(`Должность: ${object.OPUCATION} <br>`);
+            document.write(`Образование: ${object.DEGREE}<br>`);
+            document.write(`Преподаваемая специальность: ${object.DISCRIPTION} <br>`);
+            document.write(`Логин: ${object.LOGIN} <br>`);
+            document.write(`Возраст: ${object.AGE} <br>`);
+            document.write(`E-mail: ${object.EMAIL} <br><br>`);
+
+            // переопределим значения переменных
+            let object2 = {
+                surname : 'Ивaнов',
+                name : 'Василий',
+                patronimic : 'Иванович',
+                opucation : 'Преподаватель',
+                degree : 'Высшее',
+                discription : 'PHP',
+                login : 'vasya123',
+                age : 18,
+                email : 'vasya123@mail.ru'
+            };
+            // let surname = 'Ивaнова';
+            // let name = 'Анна';
+            // let patronimic = 'Ивановна';
+            // let opucation = 'Преподаватель';
+            // let degree = 'Высшее';
+            // let discription = 'JS';
+            // let login = 'anyta987';
+            // let age = '17';
+            // let email = 'anyta987@mail.ru';
+
+            // выведем новые значения переменных
+            document.write(`Новые значения переменных <br>`);
+            document.write(`<h3> ${object2.surname} ${object2.name} ${object2.patronimic} <br></h3>`);
+            document.write(`Должность: ${object2.opucation} <br>`);
+            document.write(`Образование: ${object2.degree}<br>`);
+            document.write(`Преподаваемая специальность: ${object2.discription} <br>`);
+            document.write(`Логин: ${object2.login} <br>`);
+            document.write(`Возраст: ${object2.age} <br>`);
+            document.write(`E-mail: ${object2.email} <br><br>`);
+
+            // как я поняла, я уже использовала интерполяцию переменных
+        </script>
+    </div>
+
+</body>
+
+</html>
